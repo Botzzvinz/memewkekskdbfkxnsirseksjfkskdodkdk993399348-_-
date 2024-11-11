@@ -1,0 +1,36 @@
+const config = {
+  keys: {
+    accessKey: 'CB95D411150A8DA971A14FD6C08E6BC7B1220086',
+    secretKey: '68B4DA04203B10ED43F7F91E63421BC4C21EF695',
+  },
+  host: 'api4.jscrambler.com',
+  port: 443,
+  applicationId: '6731aeefd136f104f8860049',
+  areSubscribersOrdered: false,
+  useRecommendedOrder: true,
+  tolerateMinification: true,
+  profilingDataMode: "off",
+  useAppClassification: true,
+  browsers: {},
+  sourceMaps: false,
+  params: [
+    { name: "objectPropertiesSparsing" },
+    { name: "variableMasking" },
+    { name: "whitespaceRemoval" },
+    { name: "dotToBracketNotation" },
+    { name: "stringConcealing" },
+    { name: "functionReordering" },
+    { 
+      name: "propertyKeysObfuscation",
+      options: { encoding: ["hexadecimal"] }
+    },
+    { name: "regexObfuscation" },
+    { 
+      name: "controlFlowFlattening",
+      options: { features: ["opaqueSteps"] }
+    },
+    { name: "booleanToAnything" },
+    { name: "identifiersRenaming" },
+    { name: "globalVariableIndirection" }
+  ]
+};
